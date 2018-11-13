@@ -5,10 +5,10 @@
 #
 # You might need to set: Set-ExecutionPolicy RemoteSigned
 #
-# Run this boxstarter by calling the following from an **elevated** command-prompt:
-# 	start http://boxstarter.org/package/nr/url?<URL-TO-RAW-GIST>
+# Run this boxstarter by calling the following from an **elevated** command-prompt or open the url from Edge:
+# 	start http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/bltavares/windows-devbox/master/install.ps1
 # OR
-# 	Install-BoxstarterPackage -PackageName <URL-TO-RAW-GIST> -DisableReboots
+# 	Install-BoxstarterPackage -PackageName https://raw.githubusercontent.com/bltavares/windows-devbox/master/install.ps1 -DisableReboots
 #
 # Learn more: http://boxstarter.org/Learn/WebLauncher
 
