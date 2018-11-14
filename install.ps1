@@ -92,12 +92,12 @@ If (-Not (Test-Path "HKCU:SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Adv
 Set-ItemProperty -Path "HKCU:SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced\People" -Name PeopleBand -Type DWord -Value 0
 
 # Docker
-choco install -y Microsoft-Hyper-V-All --source="'windowsFeatures'"
+choco install -y --source windowsfeatures Microsoft-Hyper-V-All
 Enable-WindowsOptionalFeature -Online -FeatureName containers -All
 choco install -y docker-for-windows
 
 # WSL
-choco install -y Microsoft-Windows-Subsystem-Linux --source="'windowsfeatures'"
+choco install -y --source windowsfeatures Microsoft-Windows-Subsystem-Linux
 choco install -y wsl-debiangnulinux
 choco install -y vcxsrv
 debian.exe run apt update
