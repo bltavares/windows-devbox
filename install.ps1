@@ -101,7 +101,7 @@ choco install -y Microsoft-Windows-Subsystem-Linux -source windowsfeatures
 choco install -y wsl-debiangnulinux
 choco install -y vcxsrv
 wsl apt update
-wsl run apt upgrade -y
+wsl apt upgrade -y
 
 # Apps
 choco install -y git -package-parameters='"/GitAndUnixToolsOnPath /WindowsTerminal /NoAutoCrlf"'
