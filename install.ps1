@@ -100,11 +100,11 @@ choco install -y docker-for-windows
 choco install -y Microsoft-Windows-Subsystem-Linux -source windowsfeatures 
 choco install -y wsl-debiangnulinux
 choco install -y vcxsrv
-debian.exe run apt update
-debian.exe run apt upgrade -y
+wsl apt update
+wsl run apt upgrade -y
 
 # Apps
-choco install -y git --package-parameters="'/GitAndUnixToolsOnPath /WindowsTerminal'"
+choco install -y git -package-parameters='"/GitAndUnixToolsOnPath /WindowsTerminal /NoAutoCrlf"'
 
 $applicationList = @(
   "firefox"
