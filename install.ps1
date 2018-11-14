@@ -104,7 +104,7 @@ wsl apt update
 wsl apt upgrade -y
 
 # Apps
-choco install -y git -package-parameters='"/GitAndUnixToolsOnPath /WindowsTerminal /NoAutoCrlf"'
+choco install -y -package-parameters "/GitAndUnixToolsOnPath /WindowsTerminal /NoAutoCrlf" git 
 
 $applicationList = @(
   "firefox"
