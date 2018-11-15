@@ -109,6 +109,7 @@ choco install -y -package-parameters "'/GitAndUnixToolsOnPath /WindowsTerminal /
 $applicationList = @(
   "firefox"
   "terraform"
+  "cmdermini"
   "vscode"
   "7zip"
   "keepass"
