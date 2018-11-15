@@ -15,4 +15,5 @@ Powershell setup:
 
 ```powershell
 cat "Set-PSReadlineOption -EditMode Emacs" > $profile
+cat "Set-PSReadlineOption -EditMode Emacs" > "$ENV:CMDER_ROOT\config\profile.d\config.ps1"
 ```
