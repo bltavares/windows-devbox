@@ -114,6 +114,7 @@ $applicationList = @(
   "keepass"
   "keepass-keepasshttp"
   "keepass-plugin-readablepassphrasegen"
+  "yubico-authenticator"
   "synctrayzor"
   "wsltty"
   "zerotier-one"
