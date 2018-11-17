@@ -108,18 +108,21 @@ choco install -y -package-parameters "'/GitAndUnixToolsOnPath /WindowsTerminal /
 
 $applicationList = @(
   "firefox"
-  "terraform"
-  "cmdermini"
-  "vscode"
   "7zip"
   "keepass"
   "keepass-keepasshttp"
   "keepass-plugin-readablepassphrasegen"
-  "yubico-authenticator"
   "synctrayzor"
-  "wsltty"
   "zerotier-one"
   "vlc"
+  
+  "yubico-authenticator"
+  "wsltty"
+  "cmdermini"
+  "vscode"
+  "terraform"
+  "make"
+  "shellcheck"
 );
 
 foreach ($app in $applicationList) {
